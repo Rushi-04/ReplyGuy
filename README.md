@@ -1,8 +1,8 @@
-# X Reply Bot 🤖
+# X Reply Bot 
 
 An automated X (Twitter) reply bot that generates positive, encouraging, and supportive replies to tweets. Built with Python and Selenium.
 
-## Features ✨
+## Features 
 
 - **AI-Powered Replies**: Uses Google Gemini AI to generate human-like, enthusiastic replies
 - **Session Persistence**: Login once, reuse session forever - no repeated logins needed
@@ -14,7 +14,7 @@ An automated X (Twitter) reply bot that generates positive, encouraging, and sup
 - **Manual Approval Mode**: Review replies before posting (optional)
 - **Comprehensive Logging**: All actions logged for monitoring
 
-## Installation 📦
+## Installation 
 
 1. **Clone or navigate to the project directory**
 
@@ -32,7 +32,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## Usage 🚀
+## Usage 
 
 ### First Time Setup
 
@@ -83,7 +83,7 @@ python src/main.py --max-replies 10
 - `--manual-approval`: Require approval for each reply
 - `--max-replies N`: Maximum replies per run (default: 5)
 
-## How It Works 🔧
+## How It Works 
 
 1. **Session Management**: 
    - Uses Chrome user profile directory to persist login
@@ -111,7 +111,7 @@ python src/main.py --max-replies 10
    - Content filtering
    - Maximum replies per run
 
-## Project Structure 📁
+## Project Structure 
 
 ```
 ReplyGuy/
@@ -128,7 +128,7 @@ ReplyGuy/
 └── requirements.txt        # Dependencies
 ```
 
-## Configuration ⚙️
+## Configuration 
 
 ### Rate Limiting
 
@@ -150,7 +150,7 @@ Edit `src/reply_engine.py` in `is_appropriate_tweet()` to:
 - Add blocklisted words
 - Customize filtering logic
 
-## Safety & Best Practices ⚠️
+## Safety & Best Practices 
 
 1. **Start with manual approval mode** to review replies
 2. **Use conservative rate limits** (5-10 replies per run)
@@ -159,7 +159,7 @@ Edit `src/reply_engine.py` in `is_appropriate_tweet()` to:
 5. **Don't spam** - the bot includes rate limiting, but use responsibly
 6. **Test thoroughly** before running continuously
 
-## Troubleshooting 🔍
+## Troubleshooting 
 
 **Bot can't find tweets:**
 - X/Twitter may have changed their HTML structure
@@ -180,7 +180,7 @@ Edit `src/reply_engine.py` in `is_appropriate_tweet()` to:
 - The bot uses `undetected-chromedriver` to avoid detection
 - If issues persist, try running in non-headless mode
 
-## Logs 📝
+## Logs 
 
 Logs are saved in `logs/` directory with format:
 - `bot_YYYYMMDD.log` - Daily log files
@@ -190,7 +190,7 @@ Check logs for:
 - Errors and warnings
 - Tweet extraction details
 
-## Database 📊
+## Database 
 
 Replied tweets are tracked in:
 - `session/replied_tweets.db` - SQLite database
@@ -202,11 +202,11 @@ Contains:
 - Reply text
 - Timestamp
 
-## License 📄
+## License 
 
 This project is for educational purposes. Use responsibly and in accordance with X/Twitter's Terms of Service.
 
-## Disclaimer ⚠️
+## Disclaimer 
 
 This bot is provided as-is for educational purposes. Automated interactions on social media platforms may violate their terms of service. Use at your own risk and responsibility.
 
